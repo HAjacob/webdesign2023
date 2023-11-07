@@ -1,0 +1,13 @@
+{
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start -p 3009",
+        "lint": "next lint"
+    },
+    "devDependencies": {
+        "@types/node": "20.8.10",
+        "@types/react": "18.2.36",
+        "typescript": "5.2.2"
+    }
+}

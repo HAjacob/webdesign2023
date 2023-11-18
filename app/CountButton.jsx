@@ -9,7 +9,7 @@ import { useState, useEffect } from "react"
 export default function CountButton(props) {
     let [count, setCount] = useState(0)
     function handleClick() {
-        setCount(count + 1)
+        setCount(count + (1* props.mult))
     }
     function rollOverCount() {
         if (count > 10) {
@@ -19,7 +19,7 @@ export default function CountButton(props) {
     useEffect(rollOverCount, [count])
     return (
         <div>
-        <button onClick = {handleClick}> button </button>
+        <button onClick = {handleClick}> {props.name} </button>
         <div>{count}</div>
         </div>
     )
